@@ -177,7 +177,7 @@ if [ "$CHECK" = true ]; then
   python3 gatorgrader/gatorgrader.py --nowelcome --commands "gradle -q --console plain run" --outputlines 6
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least three commits by the student
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 3
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 9
   determine_exit_code $?
  echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
